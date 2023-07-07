@@ -37,9 +37,9 @@ const pAequorFactory = (num, arr) => {
 };
 
 const organism = pAequorFactory(1, mockUpStrand());
-console.log("Specimen Number:", organism.specimenNum);
-console.log("Original DNA:", organism.dna);
-console.log("Mutated DNA:", organism.mutate().mutatedDna);
+//console.log("Specimen Number:", organism.specimenNum);
+//console.log("Original DNA:", organism.dna);
+//console.log("Mutated DNA:", organism.mutate().mutatedDna);
 
 
 

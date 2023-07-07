@@ -27,14 +27,21 @@ const pAequorFactory = (num, arr) => {
         return newBase;
       });
 
-      return mutatedDna;
+      return {
+        specimenNum: this.specimenNum,
+        originalDna: this.dna,
+        mutatedDna: mutatedDna,
+      };
     },
   };
 };
 
 const organism = pAequorFactory(1, mockUpStrand());
+console.log("Specimen Number:", organism.specimenNum);
 console.log("Original DNA:", organism.dna);
-console.log("Mutated DNA:", organism.mutate());
+console.log("Mutated DNA:", organism.mutate().mutatedDna);
+
+
 
 
 
